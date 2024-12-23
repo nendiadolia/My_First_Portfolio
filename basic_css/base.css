@@ -1,0 +1,31 @@
+/* Set <body> and <main> as flexible containers */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it takes full viewport height */
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* Adjust main container sizing automatically */
+  }
+  
+  /* Allocate width proportions to <article> and <aside> */
+  article {
+    flex: 2; /* Takes up 2/3 of available width */
+    overflow-y: auto; /* Enables vertical scrolling */
+  }
+  
+  aside {
+    flex: 1; /* Takes up 1/3 of available width */
+    overflow-y: auto; /* Enables vertical scrolling */
+  }
+  
+  /* Optional: Styling for header and footer */
+  header, footer {
+    padding: 1em;
+    background-color: #f0f0f0; /* Example background color */
+    text-align: center;
+  }
+  
